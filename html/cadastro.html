@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <title>Formulário - cadastro</title>
+  </head>
+  <body class="bg-secondary bg-opacity-50 mt-2 mb-2">
+    <div class="container w-100">
+      <header class="d-flex align-items-center bg-primary p-1">
+        <nav class="navbar navbar-expand-lg bg-body-">
+          <div class="container-fluid">
+            <a class="navbar-brand text-white fs-2" href="#" >Sistema WEB</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon shadow"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link text-white" aria-current="page" href="#">Cadastrar</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">Consultar</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main class="bg-white p-4">
+        <h2>Cadastrar - Agendamento de potenciais clientes</h2>
+        <p>Sistema utilizado para agendamentos de serviços.</p>
+        <form action="" class="d-flex flex-column">
+          <label class="mt-4 mb-4">Nome:
+            <input type="text" name="name" id="name" class="form-control form-control-sm shadow-none">
+          </label>
+          <label class="mb-4">Telefone:
+            <input type="tel" name="phone" id="phone" class="clearfix form-control form-control-sm shadow-none">
+          </label>
+          <label class="mb-4">Origem:
+            <select name="origin" id="origin" class="form-select form-select-sm shadow-none">
+              <option value="selecione" disabled selected>Selecione</option>
+              <option value="celular">Celular</option>
+              <option value="facebook">Facebook</option>
+              <option value="instagram">Instagram</option>
+              <option value="twitter">Twitter</option>
+            </select>
+          </label>
+          <label class="mb-4">Data do Contato:
+            <input type="date" name="ontact-date" id="contact-date" class="form-control shadow-none form-control-sm">
+          </label>
+          <label class="mb-4">Observação:
+            <textarea name="obs" id="obs"class="form-control shadow-none"></textarea>
+          </label>
+        </form>
+        <button type="submit" class="btn bg-primary text-white">Cadastrar</button>
+      </main>
+    </div>
+  </body>
+</html>
+
